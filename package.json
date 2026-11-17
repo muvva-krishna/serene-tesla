@@ -1,0 +1,41 @@
+{
+  "name": "mastra-trace-coach",
+  "version": "0.1.0",
+  "description": "Trace intelligence, contrastive autoevals, patch suggestions, rollouts, and memory benchmarking for Mastra agents.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "trace-coach": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "demo": "tsx src/cli.ts demo",
+    "generate:results": "tsx src/cli.ts demo --out results",
+    "bench:memory": "tsx src/cli.ts bench-memory",
+    "rollout": "tsx src/cli.ts rollout"
+  },
+  "keywords": [
+    "mastra",
+    "ai-agents",
+    "observability",
+    "trace-intelligence",
+    "evals",
+    "agent-learning",
+    "mcp",
+    "memory-benchmark"
+  ],
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@mastra/core": "^1.83.0",
+    "zod": "^4.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.3",
+    "vitest": "^5.1.0"
+  }
+}
