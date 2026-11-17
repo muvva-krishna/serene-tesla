@@ -1,5 +1,5 @@
 {
-  "name": "mastra-trace-coach",
+  "name": "agent-trace-coach",
   "version": "0.1.0",
   "description": "Trace intelligence, contrastive autoevals, patch suggestions, rollouts, and memory benchmarking for Mastra agents.",
   "type": "module",

@@ -1,4 +1,4 @@
-# Mastra Trace Coach
+# Agent Trace Coach
 
 **Trace Intelligence, `@mastra/core` Autoevals, Contrastive Peer Diagnostics, Memory Primitive Benchmarking, Patch Suggestions, and Gated Rollouts for Mastra Agents.**
 

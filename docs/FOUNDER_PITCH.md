@@ -4,7 +4,7 @@
 
 > Mastra already gives TypeScript developers agents, workflows, memory, and OpenTelemetry-native observability (`SpanRecord` + `createScorer`). The next leap is closing the **Agent Learning loop**: turning raw trace trees into automated failure diagnoses (**Trace Intelligence**), grading them reliably (**Autoevals**), generating targeted configuration/prompt/memory fixes (**Suggestions**), and gating promotions with repeatable experiments (**Rollouts**).
 >
-> I built **`mastra-trace-coach`** in TypeScript directly on `@mastra/core/evals` and `@mastra/core/observability` to prototype that exact loop end-to-end—combining native `MastraScorer`s, TRACE-style contrastive peer analysis, `callstack/agent-device` MCP trajectory verification, and LongMemEval-style memory tuning.
+> I built **`agent-trace-coach`** in TypeScript directly on `@mastra/core/evals` and `@mastra/core/observability` to prototype that exact loop end-to-end—combining native `MastraScorer`s, TRACE-style contrastive peer analysis, `callstack/agent-device` MCP trajectory verification, and LongMemEval-style memory tuning.
 
 ---
 

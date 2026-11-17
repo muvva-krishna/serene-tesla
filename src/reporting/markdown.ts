@@ -18,7 +18,7 @@ function pct(v: number): string {
 export function renderUnifiedMarkdownReport(report: UnifiedPipelineReport): string {
   const lines: string[] = [];
 
-  lines.push('# Mastra Trace Coach — Agent Learning & Evaluation Report');
+  lines.push('# Agent Trace Coach — Agent Learning & Evaluation Report');
   lines.push('');
   lines.push(
     'Unified Trace Intelligence, `@mastra/core` Scorer Autoevals, Contrastive Peer Diagnostics, Memory Primitive Benchmarking, Patch Suggestions, and Gated Rollouts.',

@@ -1,4 +1,4 @@
-# Mastra Trace Coach — Agent Learning & Evaluation Report
+# Agent Trace Coach — Agent Learning & Evaluation Report
 
 Unified Trace Intelligence, `@mastra/core` Scorer Autoevals, Contrastive Peer Diagnostics, Memory Primitive Benchmarking, Patch Suggestions, and Gated Rollouts.
 
