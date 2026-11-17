@@ -43,12 +43,18 @@ npm run build
 npm test
 ```
 
-Run the full unified pipeline demo (and generate `results/report.md` and `results/report.json`):
+Run the full unified pipeline demo (and generate `results/index.html`, `results/report.md`, and `results/report.json`):
 
 ```bash
 npm run generate:results
 # or after npm run build:
 node dist/cli.js demo --out results
+```
+
+Open the generated visual dashboard in your browser:
+
+```bash
+xdg-open results/index.html
 ```
 
 Other CLI subcommands:
@@ -63,7 +69,7 @@ node dist/cli.js rollout        # Run baseline vs. candidate rollout & promotion
 
 ## Generated Results (`results/`)
 
-Running `npm run generate:results` dynamically produces [`results/report.md`](results/report.md) and [`results/report.json`](results/report.json) from the live TypeScript pipeline:
+Running `npm run generate:results` dynamically produces [`results/index.html`](results/index.html) (visual dashboard), [`results/report.md`](results/report.md), and [`results/report.json`](results/report.json) from the live TypeScript pipeline:
 
 | Stage | Key Output |
 | --- | --- |

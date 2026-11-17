@@ -6,6 +6,7 @@ import { runMemoryPrimitiveBenchmark } from './benchmarks/memory-bench.js';
 import { evaluateTraceWithMastraScorers } from './evals/scorers.js';
 import { runRolloutAndGate } from './learning/rollouts.js';
 import { generatePatchSuggestions } from './learning/suggestions.js';
+import { renderUnifiedHtmlReport } from './reporting/html.js';
 import {
   renderUnifiedMarkdownReport,
   type UnifiedPipelineReport,
@@ -81,7 +82,10 @@ async function main(): Promise<void> {
       mkdirSync(outDir, { recursive: true });
       writeFileSync(join(outDir, 'report.md'), md, 'utf8');
       writeFileSync(join(outDir, 'report.json'), JSON.stringify(report, null, 2), 'utf8');
-      console.log(`\nSaved artifacts to ${outDir}/report.md and ${outDir}/report.json`);
+      writeFileSync(join(outDir, 'index.html'), renderUnifiedHtmlReport(report), 'utf8');
+      console.log(
+        `\nSaved artifacts to ${outDir}/report.md, ${outDir}/report.json, and ${outDir}/index.html`,
+      );
     }
     return;
   }
